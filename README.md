@@ -1,7 +1,7 @@
 
 
 # ORCHARD THEME
-Usually, you only add wordpress theme in the repository. But for an easy setup, I put the wordpress site in the repository.
+Usually, you only add wordpress theme in the repository. But for the sake of an easy setup, I put the the wordpress site in the repository.
 
 ## Local Installation
 ### Prerequisite
@@ -77,8 +77,10 @@ Admin: https://hyperboink.net/orchard/wp-admin
 Credentials: (Will be provided in the email)
 
 ### Admin Settings
-You can check the gallery and card settings under side menu admin panel "Orchard Settings".\
-![](docs/images/Orchard-settings.jpg)
+You can check the gallery and card settings under side menu admin panel "Orchard Settings".
+Gallery - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery
+Cards - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards \
+![](docs/images/results.jpg)
 
 ###Shortcodes
 For **Gallery**
@@ -88,9 +90,9 @@ For **Gallery**
 For **Cards**
 ```
 [orchard_cards]
-# or with attributes
-[orchard_cards limit="2"] 
+# or with attribute limit which limits the count of the cards shown
+[orchard_cards limit="2"]
 ```
-You can see the shortcode in action when you **navigate** to **Pages > Home** in the **admin dashboard**.
+You can see the shortcode in action when you **navigate** to **Pages > Home** in the **admin dashboard** or you can go to this link link. https://hyperboink.net/orchard/wp-admin/post.php?post=6&action=edit
 
 And that's it! 

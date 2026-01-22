@@ -33,12 +33,12 @@ class Gallery extends Shortcodes
         <div class="orchard-gallery flex">
             <div class="orchard-gallery__images">
                 <div class="orchard-gallery__image orchard-gallery__image--full">
-                    <img src="<?= esc_url($galleryImage1['medium']) ?>" data-src="<?= esc_url($galleryImage1['url']) ?>" class="orchard-gallery__img <?= $galleryImage1['has_image'] ? 'js-popup-img' : '' ?>" alt="<?= $galleryImage1['alt'] ?>"/>
+                    <img src="<?= esc_url($galleryImage1['medium']) ?>" data-src="<?= esc_url($galleryImage1['url']) ?>" class="orchard-gallery__img <?= $galleryImage1['has_image'] ? 'js-popup-img' : '' ?>" alt="<?= $galleryImage1['alt'] ?>" />
                 </div>
 
                 <div class="orchard-gallery__image orchard-gallery__image--half flex">
-                    <img src="<?= esc_url($galleryImage2['medium']) ?>" data-src="<?= esc_url($galleryImage2['url']) ?>" class="orchard-gallery__img <?= $galleryImage2['has_image'] ? 'js-popup-img' : '' ?>" alt="<?= $galleryImage2['alt'] ?>"/>
-                    <img src="<?= esc_url($galleryImage3['medium']) ?>" class="orchard-gallery__img <?= $galleryImage3['has_image'] ? 'js-popup-img' : '' ?>" data-src="<?= esc_url($galleryImage3['url']) ?>" class="orchard-gallery__img js-popup-img" alt="<?= $galleryImage3['alt'] ?>"/>
+                    <img src="<?= esc_url($galleryImage2['medium']) ?>" data-src="<?= esc_url($galleryImage2['url']) ?>" class="orchard-gallery__img <?= $galleryImage2['has_image'] ? 'js-popup-img' : '' ?>" alt="<?= $galleryImage2['alt'] ?>" />
+                    <img src="<?= esc_url($galleryImage3['medium']) ?>" class="orchard-gallery__img <?= $galleryImage3['has_image'] ? 'js-popup-img' : '' ?>" data-src="<?= esc_url($galleryImage3['url']) ?>" class="orchard-gallery__img js-popup-img" alt="<?= $galleryImage3['alt'] ?>" />
                 </div>
             </div>
             <div class="orchard-gallery__content">

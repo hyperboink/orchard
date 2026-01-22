@@ -4,13 +4,14 @@
     font-size: 21px;
     background: rgba(0,0,0,0);
     filter: brightness(1);
-    transition: background .3s ease, filter .7s ease;
+    transition: background .3s;
 
     &:hover {
         background: #131d1d;
 
         img {
-            filter: brightness(0.9);
+            filter: brightness(0.8);
+            transition: filter 0.7s;
         }
     }
 

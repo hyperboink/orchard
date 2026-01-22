@@ -72,15 +72,15 @@ npm run build
 
 
 ## Production Admin Dashboard Guide
-Url: https://hyperboink.net/orchard\
-Admin: https://hyperboink.net/orchard/wp-admin\
-Credentials: (Will be provided in the email)
+Url: https://hyperboink.net/orchard  
+Admin: https://hyperboink.net/orchard/wp-admin  
+Credentials: (Will be provided in the email)  
 
 ## Admin Settings
-You can check the gallery and card settings under side menu admin panel "Orchard Settings".\
-https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery - Gallery\
-https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards - Cards\
-![](docs/images/results.jpg)
+You can check the gallery and card settings under side menu admin panel "Orchard Settings"  
+Gallery - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery   
+Cards - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards  
+![](docs/images/Orchard-settings.jpg)
 
 ## Shortcodes
 For **Gallery**

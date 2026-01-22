@@ -32,9 +32,9 @@ wp search-replace http://localhost/orchard http://your-local-url-here:8000
 And then go back to http://localhost/orchard and you should see the wordpress configuration setup. Fill the necessary fields for the database information with the database you created in your local.
 
 ### Composer
-We need to run the composer in the theme folder since this code is using **vendor autoload** for PSR-4 compliance.
+After the above steps you will see something like **Uncaught Error: Class "Orchard\Core\Theme"** not found. We need to run the composer in the **theme folder** since the theme is using **vendor autoload**.
 ```
-cd /wp-content/themes/orchard
+cd wp-content/themes/orchard
 ```
 And then run
 ```
@@ -44,7 +44,7 @@ composer install
 ## Frontend assets
 We also need to install the npm packages
 ```
-cd /wp-content/themes/orchard
+cd wp-content/themes/orchard
 ```
 And then run
 ```
@@ -59,6 +59,16 @@ or
 ```
 npm run watch
 ```
+Note: There's no image yet since we don't include the wp-content/uploads in the repository. Make sure you go to the admin **local admin dashboard** to upload the images of the galery and cards.
+
+## Local Admin Dashboard
+To access the **local admin dashboard** just append **/wp-admin** to the url. (ex: http://localhost/orchard/wp-admin)  
+
+User: admin  
+Pass: password123  
+
+In the admin side menu panel you will see "**Orchard Settings**". Feel free to upload the image theres for gallery and cards.
+
 
 ## Production build
 Composer
@@ -70,24 +80,24 @@ Front-end assets
 npm run build
 ```
 
-
 ## Production Admin Dashboard Guide
 Url: https://hyperboink.net/orchard  
 Admin: https://hyperboink.net/orchard/wp-admin  
 Credentials: (Will be provided in the email)  
 
-## Admin Settings
+
+### Admin Settings
 You can check the gallery and card settings under side menu admin panel "Orchard Settings"  
 Gallery - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery   
 Cards - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards  
 ![](docs/images/Orchard-settings.jpg)
 
 ## Shortcodes
-For **Gallery**
+**Gallery Shortcode** (Note: There's no popup image if there's no uploaded image.)
 ```
 [orchard_gallery]
 ```
-For **Cards**
+**Cards Shortcode**
 ```
 [orchard_cards]
 # or with attribute limit which limits the count of the cards shown

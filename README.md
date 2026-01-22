@@ -11,12 +11,12 @@ Before starting make sure you install these following.
 - WP CLI - https://wp-cli.org/
 
 ### Clone or download the repository
-Ssh - git clone git@github.com:hyperboink/orchard.git
+Ssh - git clone git@github.com:hyperboink/orchard.git \
 Https - git clone https://github.com/hyperboink/orchard.git
 
 Make sure that the repo or folder can be access in your **local server**. If you are using **xamp** or **mamp** it will be in **htdocs**. But for ubuntu, the common folder would be **/var/www/html**.
 
-### DATABASE
+### Database
 In the repo, you can see that there is a db backup under `backups/orchard_db`. Create a db in your local and **import** it in your **local database**.
 
 After the import is done, try to access it in your local server http://localhost/orchard assuming that you are using the default. If you are using the default you should see a wordpress configuration setup.
@@ -41,7 +41,7 @@ And then run
 composer install
 ```
 
-### Frontend assets
+## Frontend assets
 We also need to install the npm packages
 ```
 cd /wp-content/themes/orchard
@@ -60,7 +60,7 @@ or
 npm run watch
 ```
 
-### Production build
+## Production build
 Composer
 ```
 composer install --no-dev --optimize-autoloader
@@ -72,17 +72,17 @@ npm run build
 
 
 ## Production Admin Dashboard Guide
-Url: https://hyperboink.net/orchard
-Admin: https://hyperboink.net/orchard/wp-admin
+Url: https://hyperboink.net/orchard\
+Admin: https://hyperboink.net/orchard/wp-admin\
 Credentials: (Will be provided in the email)
 
-### Admin Settings
-You can check the gallery and card settings under side menu admin panel "Orchard Settings".
-Gallery - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery
-Cards - https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards \
+## Admin Settings
+You can check the gallery and card settings under side menu admin panel "Orchard Settings".\
+https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-gallery - Gallery\
+https://hyperboink.net/orchard/wp-admin/admin.php?page=orchard-cards - Cards\
 ![](docs/images/results.jpg)
 
-###Shortcodes
+## Shortcodes
 For **Gallery**
 ```
 [orchard_gallery]

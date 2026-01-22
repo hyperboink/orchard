@@ -2,6 +2,7 @@
 
 wp-config.php
 *.log
+wp-content/uploads/
 wp-content/themes/orchard/vendor/
 wp-content/themes/orchard/dist/
 wp-content/themes/orchard/build/

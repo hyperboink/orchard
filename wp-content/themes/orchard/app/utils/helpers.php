@@ -41,6 +41,7 @@ function get_image_props($image) : array
     $defaultImage = get_template_directory_uri() . '/assets/images/default.webp';
 
     return [
+        'has_image' => isset($image['sizes']['medium']) ? true : false,
         'url' => $image['url'] ?? $defaultImage,
         'medium' => $image['sizes']['medium'] ?? $defaultImage,
         'large' => $image['sizes']['large'] ?? $defaultImage,

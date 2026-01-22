@@ -55,8 +55,8 @@ class Options
     {
         acf_add_options_page([
             'parent_slug' => 'orchard_settings',
-            'page_title'  => __(ucfirst($option), 'orchard'),
-            'menu_title'  => __(ucfirst($option), 'orchard'),
+            'page_title'  => ucfirst($option),
+            'menu_title'  => ucfirst($option),
             'menu_slug'   => 'orchard-' . $option,
             'post_id'     => 'unique_id',
             'capability'  => 'manage_options',

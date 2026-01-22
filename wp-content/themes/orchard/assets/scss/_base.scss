@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+       url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-light;
+  line-height: 1.6;
+  background: $bg-color;
+  color: $text-color;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+strong, b {
+    font-family: $font-bold;
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+
+    @include respond-below(xl) { 
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    @include respond-below(md) { 
+        text-align: center;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.heading-title {
+    h2 {
+        font-size: 30px;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $text-color;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $text-color;
+            margin: 23px 0 0;
+        }
+    }
+}
+
+.content {
+    min-height: 200px;
+}
+
+.overflow {
+    overflow: visible;
+
+    &--hidden {
+        overflow: hidden;
+    }
+}

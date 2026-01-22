@@ -1,0 +1,111 @@
+.orchard-gallery {
+    margin: 0 0 30px;
+
+    @include respond-below(lg) { 
+        flex-direction: column-reverse;
+    }
+
+    &__title {
+        h2 {
+            margin: 0 0 10px;
+
+            &:after {
+                margin: 30px 0 0;
+            }
+        }
+    }    
+
+    &__content {
+        width: 362px;
+
+        p {
+            font-size: 21px;
+            line-height: 1.43;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            line-height: 1.1;
+            letter-spacing: 1.5px;
+        }
+
+        h5 {
+            margin: 35px 0 0;
+
+            + p {
+                margin-top: 10px;
+            }
+        }
+
+        @include respond-below(lg) { 
+            width: 100%;
+            text-align: center;
+        }
+
+        @include respond-below(sm) { 
+            margin: 0 0 20px;
+        }
+    }
+
+    &__img {
+        width: 372px;
+        height: 295px;
+        object-fit: cover;
+        object-position: center;
+
+        &:hover {
+            filter: brightness(50%);
+            transition: filter .4s;
+        }
+
+        @include respond-below(xl) { 
+            width: 100%;
+        }
+
+        @include respond-below(md) { 
+            height: 195px;
+        }
+    }
+
+    &__images {
+        flex: 1;
+        display: flex;
+        gap: 10px;
+        padding: 0 25px 0 0;
+
+        @include respond-below(lg) { 
+            padding: 0;
+        }
+
+        @include respond-below(sm) { 
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        cursor: pointer;
+
+        @include respond-below(lg) { 
+            width: 100%;
+        }
+
+        &--half {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &--full {
+            .orchard-gallery__img {
+                height: 600px;
+
+                @include respond-below(md) { 
+                    height: 400px;
+                }
+
+                @include respond-below(sm) { 
+                    height: 190px;
+                }
+            }
+        }
+    }
+}

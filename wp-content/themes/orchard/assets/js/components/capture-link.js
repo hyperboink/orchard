@@ -12,9 +12,10 @@ const CAPTURE_LINK_CLASSES = {
  */
 const onCapture = (e) => {
     const { target } = e;
+    const link = target.closest(`.${CAPTURE_LINK_CLASSES.link}`);
 
-    if(target.closest(`.${CAPTURE_LINK_CLASSES.link}`)){
-        console.log('Captured link:', target.href);
+    if(link){
+        console.log('Captured link:', link.href);
     }
 }
 

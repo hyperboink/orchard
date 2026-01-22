@@ -1,0 +1,15 @@
+@import 'card';
+
+.orchard-cards {
+    .heading-title {
+        margin-bottom: 10px;
+    }
+
+    &__container {
+        gap: 10px;
+
+        @include respond-below(md) { 
+            flex-direction: column;
+        }
+    }
+}

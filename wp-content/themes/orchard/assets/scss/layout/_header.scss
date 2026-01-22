@@ -1,0 +1,15 @@
+.header {
+    &__container {
+        align-items: center;
+
+        @include respond-below(md) { 
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-bold;
+    }
+}

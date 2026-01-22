@@ -26,7 +26,7 @@ class Cards extends Shortcodes
             'limit' => ''
         ];
 
-        $atts = [...$defaults, ...$atts];
+        $atts = array_merge($defaults, $atts);
         $cardCount = 0;
 
         $title = get_field('cards_title', 'unique_id') ?: '';

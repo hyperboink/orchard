@@ -1,0 +1,8 @@
+# Configuration
+
+wp-config.php
+*.log
+wp-content/themes/orchard/vendor/
+wp-content/themes/orchard/dist/
+wp-content/themes/orchard/build/
+wp-content/themes/orchard/node_modules/

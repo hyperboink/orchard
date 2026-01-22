@@ -49,7 +49,7 @@ class Cards extends Shortcodes
                     <?php if($atts['limit'] >= $cardCount || !is_numeric($atts['limit'])): ?>
                         <div class="orchard-card">
                             <a href="<?= $block['card_link'] ?>" class="orchard-card__title js-capture" target="_blank" rel="noopener noreferrer">
-                                <img src="<?= $block['card_image'] ?: $defaultImage ?>" class="orchard-card__img">
+                                <img src="<?= $block['card_image'] ?: $defaultImage ?>" class="orchard-card__img" alt="Card image <?= $cardCount ?>">
                                 <?= $block['card_title'] ?>
                             </a>
 
